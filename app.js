@@ -25,53 +25,71 @@ const html = `
         });
       }, 500);
     </script>
-    <style >
-            body{
-                text-align: center;
-            }
-            .box{
-                line-height: 50px;
-                height: 50px;
-                width: 190px;
-                background-color:rgb(99, 67, 180);
-                color: white;
-            }
-            .color-text{
-                    color :rgb(32, 186, 228);
-            }
-            .co-chu{
-                font-family:  Arial, sans-serif; 
-            }
-            .colored-botton{
-                border: dark 2px ridge;
-                border-radius: 10px;
-                line-height: 50px;
-                height: 50px;
-                width: 190px;
-                background-color:black;
-                color: white;
-        }
-        .colored-botton:hover{
-            background-color: yellow ;
-            transition: 0.4s background-color;
-        }
-        </style>
-    </head>
-
-    <body>
-        <center>
-            <p class="box">190 x 50</p> 
-        </center>
-        <h1>
-             <p class="co-chu">Best <span class="color-text">Share Hosting</span> Company </p> 
-            </h1>
-        <h4> 
-            <p class="co-chu">With this responsive landing page template, you can promote your all hosting, domain and email servers. </p>
-         </h4>
-        <p>
-            <button type="submit" class="colored-botton">View Plan </button>
-            <button type="submit" class="colored-botton">All Features </button>
-        </p>
-    </body>
+   <style> 
+        table { 
+            border: 1px solid black; 
+            margin-left: auto; 
+            margin-right: auto; 
+        } 
+          
+        input[type="button"] { 
+            width: 100%; 
+            padding: 20px 40px; 
+            background-color: green; 
+            color: white; 
+            font-size: 24px; 
+            font-weight: bold; 
+            border: none; 
+            border-radius: 5px; 
+        } 
+          
+        input[type="text"] { 
+            padding: 20px 30px; 
+            font-size: 24px; 
+            font-weight: bold; 
+            border: none; 
+            border-radius: 5px; 
+            border: 2px solid black; 
+        } 
+    </style> 
+</head> 
+  
+<body> 
+  
+    <!-- Create table -->
+    <table id="calcu"> 
+        <tr> 
+            <td colspan="3"> 
+                <input type="text" id="result"> 
+            </td> 
+            <td><input type="button" value="c"></td> 
+        </tr> 
+  
+        <tr> 
+            <td><input type="button" value="1"></td> 
+            <td><input type="button" value="2"></td> 
+            <td><input type="button" value="3"></td> 
+            <td><input type="button" value="/"></td> 
+        </tr> 
+        <tr> 
+            <td><input type="button" value="4"></td> 
+            <td><input type="button" value="5"></td> 
+            <td><input type="button" value="6"></td> 
+            <td><input type="button" value="*"></td> 
+        </tr> 
+        <tr> 
+            <td><input type="button" value="7"></td> 
+            <td><input type="button" value="8"></td> 
+            <td><input type="button" value="9"></td> 
+            <td><input type="button" value="-"></td> 
+        </tr> 
+        <tr> 
+            <td><input type="button" value="0"></td> 
+            <td><input type="button" value="."></td> 
+            <td><input type="button" value="="></td> 
+            <td><input type="button" value="+"></td> 
+        </tr> 
+    </table> 
+</body> 
 </html>
 `
